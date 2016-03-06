@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GroupPurchase</string>
+	<string name="tab_home_page_text">首页</string>
+	<string name="tab_sellers_text">商家</string>
+	<string name="tab_me_text">我</string>
+</resources>
