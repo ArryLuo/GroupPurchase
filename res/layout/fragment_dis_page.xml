@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="PAGE4"
+        android:text="PAGE3"
         android:textSize="60sp"
         android:gravity="center" />
 

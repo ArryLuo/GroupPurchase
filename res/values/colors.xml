@@ -47,13 +47,13 @@
     <color name="actionsheet_red">#FD4A2E</color>
     <color name="actionsheet_gray">#8F8F8F</color>
     
-    <color name="light_red">#e62617</color>
-    <color name="red_color_01">#ff5756</color>
+    <color name="light_red">#E74C3C</color>
+    <color name="dark_red">#C0392B</color>
     
     <color name="whilte_plug">#F5F5F5</color>
     
     <color name="tab_text_normal">#777777</color>
-    <color name="tab_text_pressed">#36b9af</color>
+    <color name="tab_text_pressed">#C0392B</color>
     
-    <color name="title_bar_bg">#36b9af</color>
+    <color name="title_bar_bg">#E74C3C</color>
 </resources>

@@ -1,8 +1,9 @@
 package com.lagrtsoft.gp;
 
+import com.lagersoft.gp.fragment.DisFragment;
 import com.lagersoft.gp.fragment.HomePageFragment;
 import com.lagersoft.gp.fragment.MeFragment;
-import com.lagersoft.gp.fragment.SellersFragment;
+import com.lagersoft.gp.fragment.SerFragment;
 import com.lagersoft.gp.utils.CommonUtil;
 import com.lagersoft.grouppurchase.R;
 
@@ -22,30 +23,33 @@ import android.widget.TextView;
 public class MainActivity extends FragmentActivity {
 
 
-	private static final String TAB_ACTION_CENTER = "home_page"; // 入口 首页
-	private static final String TAB_SELLERS = "sellers_page"; // 商家
+	private static final String TAB_ACTION_CENTER = "home_page"; //  首页
+	private static final String TAB_SER = "ser_page"; // 服务
 	private static final String TAB_ME = "me_page"; //我
+	private static final String TAB_DIS = "dis_page"; //配送
 
 	private static final float TAB_TEXT_SIZE = 12;
 
 	private FragmentTabHost mFragmentTabHost = null;
 	
-	//三个页面的图片资源Id
+	//四个页面的图片资源Id
 	private int[] iconResIDs = { 
 			R.drawable.selector_tab_homepage,
-			R.drawable.selector_tab_sellers,
-			R.drawable.selector_tab_me };
-	//三个页面的名称Id
+			R.drawable.selector_tab_ser,
+			R.drawable.selector_tab_dis,
+			R.drawable.selector_tab_me};
+	//四个页面的名称Id
 	private int[] textResIDs = { R.string.tab_home_page_text,
-			R.string.tab_sellers_text, R.string.tab_me_text };
-	//三个页面代表字符串
+			R.string.tab_ser_text,R.string.tab_dis_text , R.string.tab_me_text};
+	//四个页面代表字符串
 	public String[] tabSpecs = { 
 			TAB_ACTION_CENTER, 
-			TAB_SELLERS,
+			TAB_SER,
+			TAB_DIS,
 			TAB_ME };
-	//三个页面对应的Fragment对应的类类型(Class type)
+	//四个页面对应的Fragment对应的类类型(Class type)
 	private Class<?>[] fragmentClasses = { HomePageFragment.class,
-			SellersFragment.class, MeFragment.class };
+			SerFragment.class,DisFragment.class, MeFragment.class };
 	
 
 	@Override
